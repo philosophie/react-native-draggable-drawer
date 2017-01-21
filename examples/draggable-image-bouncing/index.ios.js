@@ -4,13 +4,8 @@
 'use strict';
 
 var DemoScreen = require('./DemoScreen')
-var React = require('react-native')
-
-
-
-var {
-  AppRegistry
-} = React
+var React = require('react')
+import { AppRegistry } from 'react-native'
 
 
 var component = React.createClass({

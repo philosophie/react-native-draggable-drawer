@@ -1,13 +1,8 @@
-
-'use strict'
-
-var React = require('react-native');
-
 var TENSION = 800;
 var FRICTION = 90;
 
-
-var {
+import React, { Component } from 'react'
+import {
   AppRegistry,
   StyleSheet,
   Text,
@@ -16,12 +11,10 @@ var {
   Animated,
   PanResponder,
   Dimensions  
-} = React;
+} from 'react-native';
 
 var SCREEN_HEIGHT = Dimensions.get('window').height;
 var DraggableDrawerHelper = require('./helpers/DraggableDrawerHelper')(SCREEN_HEIGHT);
-
-
 
 var component = React.createClass({
 

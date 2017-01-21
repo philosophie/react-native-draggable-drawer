@@ -4,20 +4,16 @@
  */
 'use strict';
 
-var React = require('react-native');
-var precomputeStyle = require('precomputeStyle');
+import React from 'react';
 
-
-var {
+import {
   Animated,
   StyleSheet,
   Text,
   Image,
   View,
   PanResponder,
-  StyleSheet
-  
-} = React;
+} from 'react-native';
 
 var Dimensions = require('Dimensions');
 var SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -72,7 +68,7 @@ var component = React.createClass({
 
 
 
-    var imageStyle = { flex:1, alignSelf:'center', width: 250, height: 250, transform: [{scaleX: this.state.scale}, {scaleY: this.state.scale}]};
+    var imageStyle = { alignSelf:'center', width: 250, height: 250, transform: [{scaleX: this.state.scale}, {scaleY: this.state.scale}]};
 
     var bouncingView = (
        <Animated.Image 
